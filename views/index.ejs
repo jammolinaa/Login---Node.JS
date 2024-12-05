@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="resources/css/style.css">
+</head>
+<body>
+    <div class="register-form">
+        <h1>Página de Inicio</h1>
+        <% if (login) { %> 
+            <h2>El usuario conectado es: <strong><%= name %></strong></h2>
+            <a href="logout" class="btn-cancel">Logout</a>
+        <% } else { %> 
+            <h2>Bienvenido, visitante</h2>
+            <a href="login" class="btn-save">Ir al Login</a>
+        <% } %>
+    </div>
+</body>
+</html>
